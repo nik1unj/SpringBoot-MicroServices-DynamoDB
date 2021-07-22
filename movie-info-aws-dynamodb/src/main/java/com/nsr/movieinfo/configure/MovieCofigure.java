@@ -20,9 +20,9 @@ public class MovieCofigure {
 	public AmazonDynamoDB getDynamoDBObject() {
 		return AmazonDynamoDBClientBuilder.standard()
 				.withEndpointConfiguration(
-						new AwsClientBuilder.EndpointConfiguration("dynamodb.us-east-2.amazonaws.com", "us-east-2"))
+						new AwsClientBuilder.EndpointConfiguration("your url", "your region"))
 				.withCredentials(new AWSStaticCredentialsProvider(
-						new BasicAWSCredentials("AKIAU7KBK6PLFGTNSLDG", "FqTexe+wYTwd/Ivrv1XiVIBq4034feHQv96WQakM")))
+						new BasicAWSCredentials("your key", "your value")))
 				.build();
 
 	}
